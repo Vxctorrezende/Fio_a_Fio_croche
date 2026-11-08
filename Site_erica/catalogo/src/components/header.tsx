@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Instagram, LogIn, LogOut, Sparkles } from "lucide-react";
+import { Instagram, LogIn, LogOut } from "lucide-react";
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import type { User } from "@supabase/supabase-js";
@@ -48,7 +48,7 @@ export function Header() {
     <header className="site-header">
       <div className="header-inner">
         <Link href="/" className="brand" aria-label="Fio a Fio Crochê, início">
-          <span className="brand-mark"><Sparkles size={20} /></span>
+          <img className="brand-logo" src="/logo.jpg" alt="" />
           <span><span className="brand-title">Fio a Fio Crochê</span><br /><span className="brand-subtitle">feito à mão, feito com amor</span></span>
         </Link>
         <nav className="header-actions">
